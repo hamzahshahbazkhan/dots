@@ -20,7 +20,7 @@ mkdir -p "$(dirname "$STATE_FILE")"
 
 # 1) Collect files
 mapfile -t FILES < <(
-  find "$WALLPAPER_DIR" -type f \
+  find -L "$WALLPAPER_DIR" -type f \
     \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \)
 )
 

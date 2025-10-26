@@ -48,6 +48,8 @@ alias yt="open https://youtube.com"
 alias gg="open https://google.com"
 alias mt="open https://monkeytype.com"
 alias wa="open https://web.whatsapp.com"
+alias ~="cd ~"
+alias dots="cd ~/dots" 
 
 # Shell integration
 eval "$(starship init zsh)"
