@@ -1,0 +1,15 @@
+* {
+    bg0: #161616;        /* Oxocarbon - primary background */
+    bg1: #262626;        /* Oxocarbon - lighter background */
+    grey0: #393939;      /* Oxocarbon - muted grey */
+    fg0: #f2f4f8;        /* Oxocarbon - main foreground */
+
+    blue: #78a9ff;       /* Oxocarbon - blue */
+    red: #ee5396;        /* Oxocarbon - pink/red */
+    orange: #ff7eb6;     /* Oxocarbon - magenta */
+    green: #42be65;      /* Oxocarbon - green */
+    bgStatusline3: #78a9ff; /* Oxocarbon - blue highlight */
+
+    background-color: @bg0;
+}
+

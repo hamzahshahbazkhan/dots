@@ -1,0 +1,15 @@
+* {
+    bg0: #1c1917;        /* Zenwritten Stark - dark background */
+    bg1: #2d2a27;        /* Zenwritten Stark - lighter background */
+    grey0: #403e3c;      /* Zenwritten Stark - muted grey */
+    fg0: #e7e5df;        /* Zenwritten Stark - warm white */
+
+    blue: #7c9fa6;       /* Zenwritten Stark - muted cyan */
+    red: #d38d7b;        /* Zenwritten Stark - warm coral */
+    orange: #c99d86;     /* Zenwritten Stark - warm tan */
+    green: #6e9a9f;      /* Zenwritten Stark - sage */
+    bgStatusline3: #7c9fa6; /* Zenwritten Stark - cyan highlight */
+
+    background-color: @bg0;
+}
+

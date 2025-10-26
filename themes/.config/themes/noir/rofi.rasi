@@ -1,0 +1,15 @@
+* {
+    bg0: #000000;        /* Noir - pure black */
+    bg1: #262626;        /* Noir - dark grey */
+    grey0: #3a3a3a;      /* Noir - muted grey */
+    fg0: #ffffff;        /* Noir - pure white */
+
+    blue: #c0c0c0;       /* Noir - light grey */
+    red: #ffffff;        /* Noir - white */
+    orange: #d0d0d0;     /* Noir - very light grey */
+    green: #a8a8a8;      /* Noir - mid grey */
+    bgStatusline3: #ffffff; /* Noir - white highlight */
+
+    background-color: @bg0;
+}
+

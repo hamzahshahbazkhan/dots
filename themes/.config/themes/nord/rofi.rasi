@@ -1,0 +1,15 @@
+* {
+    bg0: #2e3440;        /* Nord0 - primary background */
+    bg1: #3b4252;        /* Nord1 - slightly lighter background */
+    grey0: #4c566a;      /* Nord3 - muted text/UI elements */
+    fg0: #d8dee9;        /* Nord4 - main foreground */
+
+    blue: #81a1c1;       /* Nord9 - stable primary blue */
+    red: #bf616a;        /* Nord11 */
+    orange: #d08770;     /* Nord12 */
+    green: #a3be8c;      /* Nord14 */
+    bgStatusline3: #eceff4; /* Nord6 - bright highlight */
+
+    background-color: @bg0;
+}
+

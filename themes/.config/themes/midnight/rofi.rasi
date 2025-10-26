@@ -1,0 +1,15 @@
+* {
+    bg0: #0a0e14;        /* Midnight - primary background */
+    bg1: #1f2430;        /* Midnight - slightly lighter background */
+    grey0: #4d5566;      /* Midnight - muted text/UI elements */
+    fg0: #b3b1ad;        /* Midnight - main foreground */
+
+    blue: #59c2ff;       /* Midnight - blue */
+    red: #f07178;        /* Midnight - red */
+    orange: #ff8f40;     /* Midnight - orange */
+    green: #95e6cb;      /* Midnight - green */
+    bgStatusline3: #b3b1ad; /* Midnight - highlight */
+
+    background-color: @bg0;
+}
+

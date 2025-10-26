@@ -1,0 +1,15 @@
+* {
+    bg0: #181616;        /* Kanagawa Dragon - primary background */
+    bg1: #2d4f67;        /* Kanagawa Dragon - slightly lighter background */
+    grey0: #625e5a;      /* Kanagawa Dragon - muted text/UI elements */
+    fg0: #c5c9c5;        /* Kanagawa Dragon - main foreground */
+
+    blue: #8ba4b0;       /* Kanagawa Dragon - blue */
+    red: #c4746e;        /* Kanagawa Dragon - red */
+    orange: #b98d7b;     /* Kanagawa Dragon - orange */
+    green: #87a987;      /* Kanagawa Dragon - green */
+    bgStatusline3: #c5c9c5; /* Kanagawa Dragon - highlight */
+
+    background-color: @bg0;
+}
+

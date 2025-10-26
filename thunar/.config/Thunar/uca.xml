@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1755600041029189-1</unique-id>
+	<command>/usr/bin/ghostty %f</command>
+	<description>Example for a custom action</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon></icon>
+	<name></name>
+	<submenu></submenu>
+	<unique-id>1756105108465431-1</unique-id>
+	<command>ghostty</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+</action>
+<action>
+	<icon></icon>
+	<name>set as wallpaper</name>
+	<submenu></submenu>
+	<unique-id>1756105392189211-2</unique-id>
+	<command>hyprctl hyprpaper reload ,%f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+</action>
+</actions>

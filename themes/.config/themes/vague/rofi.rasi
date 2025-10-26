@@ -1,0 +1,15 @@
+* {
+    bg0: #18191a;        /* Vague - primary background */
+    bg1: #282a2b;        /* Vague - slightly lighter background */
+    grey0: #3c3d3e;      /* Vague - muted text/UI elements */
+    fg0: #cdcdcd;        /* Vague - main foreground */
+
+    blue: #6e8fb0;       /* Vague - muted blue */
+    red: #d2788c;        /* Vague - muted pink/red */
+    orange: #9e95b8;     /* Vague - muted purple */
+    green: #5f8787;      /* Vague - muted teal */
+    bgStatusline3: #6e8fb0; /* Vague - blue highlight */
+
+    background-color: @bg0;
+}
+

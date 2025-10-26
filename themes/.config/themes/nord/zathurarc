@@ -1,0 +1,46 @@
+# Nord Zathura Theme - Complete
+
+# Notifications
+set notification-error-bg       "#bf616a"
+set notification-error-fg       "#eceff4"
+set notification-warning-bg     "#ebcb8b"
+set notification-warning-fg     "#2e3440"
+set notification-bg             "#2e3440"
+set notification-fg             "#eceff4"
+
+# Completion menu
+set completion-bg               "#2e3440"
+set completion-fg               "#d8dee9"
+set completion-group-bg         "#3b4252"
+set completion-group-fg         "#88c0d0"
+set completion-highlight-bg     "#88c0d0"
+set completion-highlight-fg     "#2e3440"
+
+# Index mode (table of contents)
+set index-bg                    "#2e3440"
+set index-fg                    "#d8dee9"
+set index-active-bg             "#88c0d0"
+set index-active-fg             "#2e3440"
+
+# Input bar
+set inputbar-bg                 "#2e3440"
+set inputbar-fg                 "#eceff4"
+
+# Status bar
+set statusbar-bg                "#3b4252"
+set statusbar-fg                "#d8dee9"
+
+# Highlighting
+set highlight-color             "rgba(235,203,139,0.5)"
+set highlight-active-color      "rgba(136,192,208,0.5)"
+
+# Main colors
+set default-bg                  "#2e3440"
+set default-fg                  "#d8dee9"
+
+# Recolor mode (subtle filter for reading)
+set recolor "false"                    # Off by default, press Ctrl+r to toggle
+set recolor-lightcolor          "#3b4252"     # Slightly lighter than bg for comfort
+set recolor-darkcolor           "#d8dee9"     # Soft white, not harsh
+set recolor-keephue             "true"        # Preserves colors better
+set recolor-reverse-video       "false"       # Normal contrast

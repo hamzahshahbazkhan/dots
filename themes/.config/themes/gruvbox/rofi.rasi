@@ -1,0 +1,15 @@
+* {
+    bg0: #1d2021;        /* Gruvbox Dark Hard - primary background */
+    bg1: #3c3836;        /* Gruvbox Dark Hard - slightly lighter background */
+    grey0: #665c54;      /* Gruvbox - muted text/UI elements */
+    fg0: #d5c4a1;        /* Gruvbox - muted foreground */
+
+    blue: #7daea3;       /* Gruvbox - muted blue */
+    red: #cc7983;        /* Gruvbox - muted red */
+    orange: #e78a4e;     /* Gruvbox - muted orange */
+    green: #a9b665;      /* Gruvbox - muted green */
+    bgStatusline3: #d8a657; /* Gruvbox - muted yellow */
+
+    background-color: @bg0;
+}
+

@@ -1,0 +1,15 @@
+
+* {
+    bg0: #232a2e;        /* Everforest - primary background */
+    bg1: #343f44;        /* Everforest - slightly lighter background */
+    grey0: #4f585e;      /* Everforest - muted text/UI elements */
+    fg0: #d3c6aa;        /* Everforest - main foreground */
+
+    blue: #7fbbb3;       /* Everforest - stable primary blue */
+    red: #e67e80;        /* Everforest - red */
+    orange: #e69875;     /* Everforest - orange */
+    green: #a7c080;      /* Everforest - green */
+    bgStatusline3: #d3c6aa; /* Everforest - bright highlight */
+
+    background-color: @bg0;
+}
