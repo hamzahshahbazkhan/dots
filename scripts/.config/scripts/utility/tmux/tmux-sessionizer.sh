@@ -5,6 +5,7 @@ SEARCH_DIRS=(
     "$HOME/DPR/CODES"
     "$HOME/Projects"
     "$HOME/.config/"
+    "$HOME/dots/"
     "$HOME/DPR/RESOURCES"
 )
 

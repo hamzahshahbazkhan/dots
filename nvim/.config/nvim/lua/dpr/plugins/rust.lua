@@ -2,8 +2,24 @@ return {
   {
     "mrcjkb/rustaceanvim",
     version = "^5",
-    lazy = false,
+    -- lazy = false,
     ft = "rust",
+    init = function()
+      vim.g.rustaceanvim = {
+        server = {
+          settings = {
+            ["rust-analyzer"] = {
+              diagnostics = {
+                -- disabled = { "unlinked-file" },
+              },
+              cargo = {
+                allFeatures = true,
+              },
+            },
+          },
+        },
+      }
+    end,
   },
   {
     "rust-lang/rust.vim",

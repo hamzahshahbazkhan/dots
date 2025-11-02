@@ -44,6 +44,10 @@ echo "Reloading services..."
 if pgrep -x mako > /dev/null; then
     makoctl reload &>/dev/null && echo "  ✓ Mako reloaded"
 fi
+if pgrep -x waybar> /dev/null; then
+    killall waybar && hyprctl dispatch exec waybar && echo "  ✓ Mako reloaded"
+fi
+
 
 # Reload tmux if it's running
 # if command -v tmux &> /dev/null && tmux info &> /dev/null 2>&1; then

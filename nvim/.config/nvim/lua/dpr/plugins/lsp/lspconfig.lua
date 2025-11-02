@@ -120,6 +120,9 @@ return {
     --   capabilities = capabilities,
     --   settings = {
     --     ["rust-analyzer"] = {
+    --       diagnostics = {
+    --         disabled = { "unlinked-file" },
+    --       },
     --       cargo = {
     --         allFeatures = true,
     --       },

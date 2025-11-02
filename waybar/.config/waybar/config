@@ -133,7 +133,7 @@
 
   "temperature": {
     "interval": 5,
-    "format": "TEMP {temperatureC}°C",
+    "format": "TMP {temperatureC}°C",
     "tooltip-format": "CPU Temp: {temperatureC}°C",
     "critical-threshold": 80,
     "states": {
