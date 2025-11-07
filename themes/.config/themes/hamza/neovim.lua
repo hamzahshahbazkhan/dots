@@ -1,55 +1,63 @@
 return {
-	"vague-theme/vague.nvim",
+	"loctvl842/monokai-pro.nvim",
 	lazy = false,
 	priority = 1000,
 	config = function()
-		require("vague").setup({
-			transparent = true,
-			bold = true,
-			italic = true,
-			colors = {
-				bg = "#1d2021", -- Gruvbox Dark Hard background
-				inactiveBg = "#282828",
-				fg = "#d4cfc4",
-				floatBorder = "#7d8f9d",
-				line = "#3c3836",
-				comment = "#7c6f64",
-				func = "#d2788c",
-				operator = "#7d8f9d",
-				keyword = "#7f8d96",
-				type = "#9b8fb0",
-				string = "#c9b88c",
-				number = "#d3a573",
-				property = "#b7ada6",
-				constant = "#a0a4aa",
-				parameter = "#b9a9a4",
-				error = "#cc6f85",
-				warning = "#d7a45a",
-				hint = "#9c9b94",
-				visual = "#383632",
-			},
-
-			on_highlights = function(hl, c)
-				-- make Neovim fully transparent
-				hl.Normal = { bg = "none", fg = c.fg }
-				hl.NormalNC = { bg = "none", fg = c.fg }
-				hl.SignColumn = { bg = "none" }
-				hl.EndOfBuffer = { bg = "none", fg = c.bg }
-				hl.LineNr = { bg = "none", fg = "#7c6f64" }
-				hl.CursorLineNr = { bg = "none", fg = "#a89984" }
-				hl.TabLine = { bg = "none" }
-				hl.TabLineFill = { bg = "none" }
-				hl.TabLineSel = { bg = "none" }
-				hl.BufferLineFill = { bg = "none" }
-				hl.BufferLineBackground = { bg = "none" }
-				hl.WinSeparator = { fg = "#3c3836", bg = "none" }
-				hl.StatusLine = { bg = "none", fg = c.fg }
-				hl.StatusLineNC = { bg = "none", fg = c.fg }
-				hl.FloatBorder = { fg = "#7d8f9d", bg = "none" }
-				hl.VertSplit = { fg = "#3c3836", bg = "none" }
+		require("monokai-pro").setup({
+			transparent_background = true,
+			filter = "machine",
+			overridePalette = function()
+				return {
+					dark2 = "#1d2021",
+					dark1 = "#1d2021",
+					background = "#1d2021",
+					text = "#d5d3cd",
+					accent1 = "#c9798a",
+					accent2 = "#8fa87a",
+					accent3 = "#b5af92",
+					accent4 = "#8da5b3",
+					accent5 = "#9ab5b8",
+					accent6 = "#9c92b0",
+					dimmed1 = "#75715e",
+					dimmed2 = "#5f5d52",
+					dimmed3 = "#414339",
+					dimmed4 = "#34352f",
+					dimmed5 = "#2a2b26",
+				}
 			end,
 		})
+		vim.cmd([[colorscheme monokai-pro]])
 
-		vim.cmd([[colorscheme vague]])
+		-- Clear background for transparent effect
+		vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+		vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+		vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
+		vim.api.nvim_set_hl(0, "LineNr", { bg = "none" })
+		vim.api.nvim_set_hl(0, "CursorLineNr", { bg = "none" })
+		vim.api.nvim_set_hl(0, "TabLine", { bg = "none" })
+		vim.api.nvim_set_hl(0, "TabLineFill", { bg = "none" })
+		vim.api.nvim_set_hl(0, "TabLineSel", { bg = "none" })
+		vim.api.nvim_set_hl(0, "BufferLineFill", { bg = "none" })
+		vim.api.nvim_set_hl(0, "BufferLineBackground", { bg = "none" })
+
+		-- Indent-blankline highlight groups (REQUIRED for v3)
+		vim.api.nvim_set_hl(0, "IblIndent", { fg = "#414339" })
+		vim.api.nvim_set_hl(0, "IblWhitespace", { fg = "#414339" })
+		vim.api.nvim_set_hl(0, "IblScope", { fg = "#8da5b3" })
+
+		-- Oil.nvim directory highlighting fix
+		vim.api.nvim_set_hl(0, "OilDir", { fg = "#8da5b3", bold = true })
+		vim.api.nvim_set_hl(0, "OilDirIcon", { fg = "#8da5b3" })
+		vim.api.nvim_set_hl(0, "OilLink", { fg = "#9c92b0" })
+		vim.api.nvim_set_hl(0, "OilLinkTarget", { fg = "#8fa87a" })
+		vim.api.nvim_set_hl(0, "OilCopy", { fg = "#b5af92", bold = true })
+		vim.api.nvim_set_hl(0, "OilMove", { fg = "#c9798a", bold = true })
+		vim.api.nvim_set_hl(0, "OilChange", { fg = "#b08a66", bold = true })
+		vim.api.nvim_set_hl(0, "OilCreate", { fg = "#8fa87a", bold = true })
+		vim.api.nvim_set_hl(0, "OilDelete", { fg = "#c9798a", bold = true })
+		vim.api.nvim_set_hl(0, "OilPermissionNone", { fg = "#75715e" })
+		vim.api.nvim_set_hl(0, "OilPermissionRead", { fg = "#b5af92" })
+		vim.api.nvim_set_hl(0, "OilPermissionWrite", { fg = "#c9798a" })
+		vim.api.nvim_set_hl(0, "OilPermissionExecute", { fg = "#8fa87a" })
 	end,
 }
