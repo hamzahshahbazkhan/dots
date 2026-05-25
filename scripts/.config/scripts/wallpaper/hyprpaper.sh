@@ -61,3 +61,7 @@ for m in "${MONITORS[@]:-}"; do
   hyprctl hyprpaper wallpaper "$m,$NEXT_WALL"
 done
 #
+#
+#
+#
+hyprctl hyprpaper unload all

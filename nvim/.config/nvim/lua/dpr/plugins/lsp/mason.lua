@@ -27,6 +27,7 @@ return {
         -- "tsserver",
         "ts_ls",
         -- "rust_analyzer",
+        "clangd",
         "html",
         "cssls",
         "tailwindcss",

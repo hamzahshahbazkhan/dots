@@ -87,3 +87,20 @@ fi
 
 
 bindkey -s '^F' 'tmux-sessionizer.sh\n'
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+alias secenv="source ~/security/tools/venv/bin/activate"
+alias newtarget="~/security/scripts/new_target.sh"
+
+# Security workspace aliases
+alias sec='cd ~/security'
+alias secenv='source ~/security/tools/venv/bin/activate'
+alias kali='sudo ~/security/docker/run_kali.sh'
+alias newtarget='~/security/scripts/new_target.sh'
+alias backup='~/security/scripts/backup.sh'
+alias secstart='~/security/scripts/start_day.sh'
+
+# TryHackMe specific aliases
+alias thm='cd ~/security/labs/tryhackme'
+alias newroom='~/security/scripts/new_thm_room.sh'
+alias thmip='echo "export IP=" >> commands.sh && nvim commands.sh'

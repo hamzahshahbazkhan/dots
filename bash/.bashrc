@@ -119,3 +119,4 @@ fi
 export PATH="$HOME/scripts:$PATH"
 
 alias theme='~/.config/scripts/themes/set-theme.sh'
+export PATH=$HOME/bin:$PATH

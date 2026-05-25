@@ -1,0 +1,14 @@
+* {
+    bg0: #000000;
+    bg1: #121212;
+    grey0: #1e1e1e;
+    fg0: #e6e2d8;
+
+    blue: #8fb2ff;
+    red: #ff95a8;
+    orange: #b39ddb;
+    green: #7fd1a0;
+    bgStatusline3: #8fb2ff;
+
+    background-color: @bg0;
+}

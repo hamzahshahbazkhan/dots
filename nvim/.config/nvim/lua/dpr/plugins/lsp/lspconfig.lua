@@ -72,6 +72,13 @@ return {
       capabilities = capabilities,
     })
 
+    vim.lsp.config("clangd", {
+      cmd = { "clangd" },
+      filetypes = { "c", "cpp", "objc", "objcpp" },
+      root_markers = { ".git", "compile_commands.json" },
+      capabilities = capabilities,
+    })
+
     -- Configure Emmet
     vim.lsp.config("emmet_ls", {
       cmd = { "emmet-ls", "--stdio" },
@@ -139,6 +146,7 @@ return {
       "graphql",
       "emmet_ls",
       "lua_ls",
+      "clangd",
       -- "rust_analyzer", -- uncomment if needed
     })
 

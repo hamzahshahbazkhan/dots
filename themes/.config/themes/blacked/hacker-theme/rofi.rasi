@@ -1,0 +1,15 @@
+* {
+    bg0: #000000;
+    bg1: #111111;
+    grey0: #1a1a1a;
+    fg0: #ffffff;
+
+    cyan: #00ccff;
+    pink: #ff0055;
+    lime: #00ff99;
+    yellow: #ffcc00;
+    orange: #ff6600;
+    purple: #cc00ff;
+
+    background-color: @bg0;
+}
