@@ -1,29 +1,29 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  branch = "master",
+  branch = "main",
   lazy = false,
-  -- event = { "BufReadPre", "BufNewFile" },
   build = ":TSUpdate",
   dependencies = {
     "windwp/nvim-ts-autotag",
   },
   config = function()
-    -- import nvim-treesitter plugin
-    local treesitter = require("nvim-treesitter.configs")
+    require("nvim-treesitter.install").prefer_git = true
 
-    -- configure treesitter
-    treesitter.setup({ -- enable syntax highlighting
+    -- Handle version differences for module naming safely
+    local status, treesitter_config = pcall(require, "nvim-treesitter.config")
+    if not status then
+      treesitter_config = require("nvim-treesitter.configs")
+    end
+
+    treesitter_config.setup({
       highlight = {
         enable = true,
+        disable = {}, -- Strictly disable Lua rendering
       },
-      -- enable indentation
       indent = { enable = true },
-      -- enable autotagging (w/ nvim-ts-autotag plugin)
-      autotag = {
-        enable = true,
-      },
-      -- ensure these language parsers are installed
+      autotag = { enable = true },
       ensure_installed = {
+        "lua",
         "json",
         "javascript",
         "typescript",
@@ -37,22 +37,12 @@ return {
         "svelte",
         "graphql",
         "bash",
-        "lua",
         "vim",
         "dockerfile",
         "gitignore",
         "query",
         "vimdoc",
         "c",
-      },
-      incremental_selection = {
-        enable = true,
-        keymaps = {
-          init_selection = "<C-space>",
-          node_incremental = "<C-space>",
-          scope_incremental = false,
-          node_decremental = "<bs>",
-        },
       },
     })
   end,

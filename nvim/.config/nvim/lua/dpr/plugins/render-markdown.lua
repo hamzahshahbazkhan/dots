@@ -2,7 +2,7 @@ return {
   "MeanderingProgrammer/render-markdown.nvim",
   dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
   ft = { "markdown" },
-  enabled = false,
+  enabled = true,
   opts = {
     link = {
       -- Turn on / off inline link icon rendering.
